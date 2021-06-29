@@ -21,7 +21,7 @@ import java.util.Objects;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@TableName("T_USER_CORE")
+@TableName(value = "T_USER_CORE",resultMap = "UserCore")
 public class UserEntity implements Serializable {
     private static final long serialVersionUID = -960192869772520197L;
 
@@ -41,7 +41,7 @@ public class UserEntity implements Serializable {
     /**
      * 身份证号
      */
-    @TableId(value = "GMSFHM", type = IdType.ASSIGN_ID)
+    @TableId(value = "GMSFHM", type = IdType.AUTO)
     private String idNo;
 
     /**
@@ -53,7 +53,7 @@ public class UserEntity implements Serializable {
     /**
      * 机构编码
      */
-    @TableField(value = "JGBM")
+    @TableField(value = "JGBM",exist = true)
     private String orgCode;
 
     /**
