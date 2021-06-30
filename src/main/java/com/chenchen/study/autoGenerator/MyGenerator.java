@@ -49,7 +49,7 @@ public class MyGenerator {
         GlobalConfig gc = new GlobalConfig();
         //获取当前系统目录
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir(projectPath + "/src/main/java/freemarker");
+        gc.setOutputDir(projectPath + "/src/main/java/");
         gc.setAuthor("sjzhao");  //生成作者注释
         gc.setOpen(false); //生成后是否打开资源管理器
         gc.setFileOverride(false); //重新生成时文件是否覆盖
@@ -72,7 +72,7 @@ public class MyGenerator {
         // 包配置
         PackageConfig pc = new PackageConfig();
         pc.setModuleName(scanner("模块名"));
-        pc.setParent("com.chenchen.study");
+        pc.setParent("freemarker");
         mpg.setPackageInfo(pc);
 
         // 自定义配置
