@@ -16,24 +16,24 @@ import java.util.List;
  */
 @RequestMapping(value = "/user")
 @RestController
-@Api(tags = "用户controller")
+@Api(tags = "user")
 public class UserController {
 
     @Resource
     private UserService userService;
 
-    @RequestMapping("/info")
+    @GetMapping("/info")
     @ApiOperation(value = "获取用户信息",notes = "姓名不能为空")
     //一般用于表达一个错误的响应信息
     @ApiResponses({
             @ApiResponse(code=404,message = "请求路径不正确或者页面跳转不对"),
             @ApiResponse(code=400,message = "请求参数没填好")})
 
-    @ApiImplicitParams({
-            @ApiImplicitParam(name="name",value="姓名",required=true,paramType="form"),
+   /* @ApiImplicitParams({
+            @ApiImplicitParam(name="name",value="姓名",required=true,paramType="body"),
             @ApiImplicitParam(name="phone",value="手机号",required=true,paramType="body"),
-            @ApiImplicitParam(name="address",value="地址",required=true,paramType="header",dataType="Integer")})
-    List<UserInfo> getInfos(
+            @ApiImplicitParam(name="address",value="地址",required=true,paramType="body",dataType="Integer")})*/
+    List<UserInfo> get(
             @ApiParam(name = "name", value = "username", required = true)String name ,
             @ApiParam(name = "phone", value = "userPhone", required = true)String phone,
             @ApiParam(name = "address", value = "address")String address){
