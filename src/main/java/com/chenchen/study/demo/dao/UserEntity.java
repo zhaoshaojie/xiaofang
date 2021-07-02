@@ -21,7 +21,7 @@ import java.util.Objects;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@TableName(value = "T_USER_CORE",resultMap = "UserCore")
+@TableName(value = "T_USER_CORE")
 public class UserEntity implements Serializable {
     private static final long serialVersionUID = -960192869772520197L;
 
