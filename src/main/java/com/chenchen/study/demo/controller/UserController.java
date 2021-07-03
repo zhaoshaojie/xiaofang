@@ -29,10 +29,10 @@ public class UserController {
             @ApiResponse(code=404,message = "请求路径不正确或者页面跳转不对"),
             @ApiResponse(code=400,message = "请求参数没填好")})
 
-   /* @ApiImplicitParams({
+   @ApiImplicitParams({
             @ApiImplicitParam(name="name",value="姓名",required=true,paramType="body"),
             @ApiImplicitParam(name="phone",value="手机号",required=true,paramType="body"),
-            @ApiImplicitParam(name="address",value="地址",required=true,paramType="body",dataType="Integer")})*/
+            @ApiImplicitParam(name="address",value="地址",required=true,paramType="body",dataType="Integer")})
     List<UserInfo> get(
             @ApiParam(name = "name", value = "username", required = true)String name ,
             @ApiParam(name = "phone", value = "userPhone", required = true)String phone,
