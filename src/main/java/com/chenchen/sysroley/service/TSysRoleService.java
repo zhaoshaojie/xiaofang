@@ -1,6 +1,6 @@
-package freemarker.sysroley.service;
+package com.chenchen.sysroley.service;
 
-import freemarker.sysroley.entity.TSysRole;
+import com.chenchen.sysroley.entity.TSysRole;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

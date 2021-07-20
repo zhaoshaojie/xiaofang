@@ -1,7 +1,8 @@
-package freemarker.sysroley.mapper;
+package com.chenchen.sysroley.mapper;
 
-import freemarker.sysroley.entity.TUserInfo;
+import com.chenchen.sysroley.entity.TUserInfo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author sjzhao
  * @since 2021-06-30
  */
+@Mapper
 public interface TUserInfoMapper extends BaseMapper<TUserInfo> {
 
 }

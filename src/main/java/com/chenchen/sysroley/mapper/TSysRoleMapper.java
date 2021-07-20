@@ -1,7 +1,10 @@
-package freemarker.sysroley.mapper;
+package com.chenchen.sysroley.mapper;
 
-import freemarker.sysroley.entity.TSysRole;
+import com.chenchen.sysroley.entity.TSysRole;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
+
+import javax.annotation.ManagedBean;
 
 /**
  * <p>
@@ -11,6 +14,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author sjzhao
  * @since 2021-06-29
  */
+@Mapper
 public interface TSysRoleMapper extends BaseMapper<TSysRole> {
 
 }

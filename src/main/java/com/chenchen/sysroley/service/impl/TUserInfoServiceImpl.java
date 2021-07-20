@@ -1,8 +1,8 @@
-package freemarker.sysroley.service.impl;
+package com.chenchen.sysroley.service.impl;
 
-import freemarker.sysroley.entity.TUserInfo;
-import freemarker.sysroley.mapper.TUserInfoMapper;
-import freemarker.sysroley.service.TUserInfoService;
+import com.chenchen.sysroley.entity.TUserInfo;
+import com.chenchen.sysroley.mapper.TUserInfoMapper;
+import com.chenchen.sysroley.service.TUserInfoService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

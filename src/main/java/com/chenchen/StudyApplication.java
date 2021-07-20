@@ -1,11 +1,11 @@
-package com.chenchen.study;
+package com.chenchen;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.chenchen.study.demo.dao")
+@MapperScan("com.chenchen")
 public class StudyApplication {
 
 	public static void main(String[] args) {
